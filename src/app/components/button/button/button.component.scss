@@ -1,0 +1,16 @@
+button {
+  display: inline-block;
+  padding: .5rem 1rem;
+}
+
+:host(.primary) {
+  button {
+    background: blue;
+  }
+}
+
+:host(.alt) {
+  button {
+    background: gray;
+  }
+}

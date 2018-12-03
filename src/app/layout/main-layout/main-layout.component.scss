@@ -1,5 +1,9 @@
 :host {
   flex-grow: 1;
+  padding: 2em;
+}
+
+:host(.center) {
   display: flex;
   align-items: center;
   justify-content: center;
