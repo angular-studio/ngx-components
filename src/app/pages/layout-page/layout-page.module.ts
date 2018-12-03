@@ -15,6 +15,11 @@ const routes: Routes = [
       {
         path: 'buttons',
         loadChildren: '../components/buttons/buttons.module#ButtonsModule'
+      },
+      {
+        path: '',
+        redirectTo: 'buttons',
+        pathMatch: 'full'
       }
     ]
   },
