@@ -1,0 +1,12 @@
+<div class="sidebar-layout">
+  <div class="sidebar__search">
+    <input type="text" class="sidebar-search" placeholder="Search">
+  </div>
+  <div class="sidebar__pages">
+    <ul>
+      <li *ngFor="let page of pages">
+        <a [routerLink]="page?.url">{{page?.title}}</a>
+      </li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+:host {
+  flex-basis: 25%;
+  max-width: 20rem;
+  border-right: 1px solid #ddd;
+}
+.sidebar {
+  &-layout {
+    padding: .8rem;
+  }
+
+  &-search {
+    padding: .5rem;
+    width: 100%;
+  }
+}
+
+ul {
+  margin: 1em 0 0 0;
+  padding: 0;
+  list-style: none;
+  
+  li {
+    margin: 0;
+    padding: 0;
+  }
+}
