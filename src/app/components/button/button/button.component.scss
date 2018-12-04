@@ -1,16 +1,28 @@
+@import '../../../../theme/_variables';
+
+@mixin button($background: $primary, $color: $text-white) {
+  button {
+    background-color: $background;
+    border: 1px solid darken($background, 10%);
+    color: $color;
+    transition: 0.3s ease background-color;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken($background, 20%)
+    }
+  }
+}
+
 button {
   display: inline-block;
   padding: .5rem 1rem;
 }
 
 :host(.primary) {
-  button {
-    background: blue;
-  }
+  @include button();
 }
 
 :host(.alt) {
-  button {
-    background: gray;
-  }
+  @include button($alt);
 }
