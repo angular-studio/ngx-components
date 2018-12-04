@@ -17,6 +17,10 @@ const routes: Routes = [
         loadChildren: '../components/buttons/buttons.module#ButtonsModule'
       },
       {
+        path: 'form',
+        loadChildren: '../components/form/form.module#FormModule'
+      },
+      {
         path: '',
         redirectTo: 'buttons',
         pathMatch: 'full'

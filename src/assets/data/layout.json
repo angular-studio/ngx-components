@@ -2,5 +2,9 @@
   {
     "title": "Buttons",
     "url": "/pages/buttons"
+  },
+  {
+    "title": "Form",
+    "url": "/pages/form"
   }
 ]
