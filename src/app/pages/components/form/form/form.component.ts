@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-form',
@@ -15,17 +15,28 @@ export class FormComponent implements OnInit {
 
   ngOnInit() {
     this.group = this.formBuilder.group({
-      item: []
+      radio: [],
+      checkbox: [[], Validators.required]
     });
 
-    const itemVal = {
+    const radio = {
       value: 1,
       options: [
         {label: 'a', value: 2},
         {label: 'b', value: 1},
       ]
     };
-    this.group.get('item').patchValue(itemVal);
+    const checkbox = [
+      {label: 'a', value: 2, checked: true},
+      {label: 'b', value: 1, checked: false},
+    ];
+    this.group.get('radio').patchValue(radio);
+    this.group.get('checkbox').patchValue(checkbox);
+
+
+    this.group.valueChanges.subscribe(value => {
+      console.log('form value', value);
+    });
   }
 
 }

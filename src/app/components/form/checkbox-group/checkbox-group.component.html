@@ -1,0 +1,9 @@
+<form [formGroup]="inputGroups">
+  <label *ngFor="let input of inputs.controls; let i=index" formArrayName="inputs">
+    <div [formGroupName]="i">
+        <input type="checkbox" formControlName="checked">
+        {{input.get('label').value}}
+    </div>
+    
+  </label>
+</form>

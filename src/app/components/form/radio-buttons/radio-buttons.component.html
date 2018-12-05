@@ -1,6 +1,6 @@
 <form [formGroup]="inputGroups">
-      <label  *ngFor="let item of list; let i=index">
-          <input type="radio"  formControlName="inputs" [value]="item.value">
-          {{item?.label}}
-        </label>
+  <label *ngFor="let item of list; let i=index">
+    <input type="radio" formControlName="inputs" [value]="item?.value">
+    {{item?.label}}
+  </label>
 </form>
