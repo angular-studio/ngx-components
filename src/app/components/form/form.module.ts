@@ -4,11 +4,13 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RadioButtonsComponent } from './radio-buttons/radio-buttons.component';
 import { CheckboxGroupComponent } from './checkbox-group/checkbox-group.component';
 import { InputBoxComponent } from './input-box/input-box.component';
+import { SelectoBoxComponent } from './selecto-box/selecto-box.component';
 
 const components = [
   RadioButtonsComponent,
   CheckboxGroupComponent,
-  InputBoxComponent
+  InputBoxComponent,
+  SelectoBoxComponent
 ];
 
 @NgModule({
